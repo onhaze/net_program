@@ -15,6 +15,6 @@ while True:
     print(name.decode())
 
     # 학생의 학번을 전송
-    client.send((20221296).to_bytes(4,'big'))
+    client.send((20221327).to_bytes(4,'big'))
 
     client.close()
