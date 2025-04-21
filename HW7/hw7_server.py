@@ -1,14 +1,11 @@
 import socket
 
-# 서버 설정
 HOST = '127.0.0.1'
 PORT = 12345
 BUFFER_SIZE = 1024
 
-# 메일박스 저장용 딕셔너리
 mailboxes = {}
 
-# UDP 소켓 생성
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((HOST, PORT))
 print(f"[INFO] UDP Server listening on {HOST}:{PORT}...")
